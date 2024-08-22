@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <script>
+       document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById("fname").innerHTML=""
 
+            document.getElementById("submit").addEventListener("click",function(){
+            alert("registration complete");
+        });
+        });
+    </script>
+</head>
+<body>
+    <h1>Registerform</h1>
+    <form >
+        <label for="id">FirstName</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="id">LastName</label>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        
+        <label for="id">Email</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        
+        <label for="id">contact</label>
+        <input type="number" id="contact" name="contact" required><br><br>
+
+        <button id="submit">submit</button>
+    </form>
+</body>
+</html>
